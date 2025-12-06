@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stack App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to Stack App</h1>
+    <script src="script.js"></script>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>FinTiles</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <div class="brand">
+        <span class="brand-mark">◻</span>
+        <span class="brand-name">FinTiles</span>
+      </div>
+      <div class="controls">
+        <button class="control-btn active" data-view="all">All tiles</button>
+        <button class="control-btn" data-view="essentials">Essentials</button>
+        <button class="control-btn" id="refresh-btn">Refresh</button>
+      </div>
+    </header>
+
+    <main class="dashboard">
+      <section class="tiles-grid" id="tiles-grid"></section>
+
+      <aside class="details-panel">
+        <div class="details-placeholder" id="details-placeholder">
+          <p>Tap a tile to see more detail.</p>
+        </div>
+        <div class="details-content hidden" id="details-content">
+          <p class="details-label">Tile</p>
+          <h2 class="details-title" id="details-title"></h2>
+
+          <p class="details-label">Current value</p>
+          <p class="details-value" id="details-value"></p>
+
+          <p class="details-label">Description</p>
+          <p class="details-text" id="details-description"></p>
+
+          <p class="details-label">Last updated</p>
+          <p class="details-meta" id="details-updated"></p>
+        </div>
+      </aside>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
